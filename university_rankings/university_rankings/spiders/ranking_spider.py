@@ -15,7 +15,6 @@ class RankingSpider(scrapy.Spider):
                 item = UniversityRankingItem()
                 item['rank'] = rank.strip()
                 item['university_name'] = university_name.strip()
-                # Extract other data if needed
                 yield item
 
 
